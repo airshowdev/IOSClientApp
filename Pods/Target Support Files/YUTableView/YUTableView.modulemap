@@ -1,0 +1,6 @@
+framework module YUTableView {
+  umbrella header "YUTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

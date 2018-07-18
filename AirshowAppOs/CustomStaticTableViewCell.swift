@@ -10,6 +10,9 @@ import UIKit
 
 class CustomStaticTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var cellView: UIView!
+    @IBOutlet weak var staticLabel: UILabel!
+    @IBOutlet weak var staticImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

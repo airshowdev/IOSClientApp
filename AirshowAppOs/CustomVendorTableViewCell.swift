@@ -10,15 +10,12 @@ import UIKit
 
 class CustomVendorTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var cellView2: UIView!
+    @IBOutlet weak var vendorImage: UIImageView!
+    @IBOutlet weak var vendorLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

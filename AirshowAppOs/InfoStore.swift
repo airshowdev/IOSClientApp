@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class InfoStore
+{
+    static var database: Databases?
+    
+    static func setDatabase(databaseIn: Databases)
+    {
+        database = databaseIn
+    }
+    
+    static func getDatabase() -> Databases
+    {
+        return database!
+    }
+}

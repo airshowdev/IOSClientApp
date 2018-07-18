@@ -1,24 +1,570 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AirshowAppOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AlB-ug-xry"/>
+                        <viewControllerLayoutGuide type="bottom" id="7mU-Rd-xJ2"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afs-dk-jJJ">
+                                <rect key="frame" x="143" y="578" width="89" height="45"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="OK"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1yk-of-FMr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZb-LF-gim">
+                                <rect key="frame" x="0.0" y="373" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7pi-y0-40Y" userLabel="pickerBases">
+                                <rect key="frame" x="0.0" y="411" width="375" height="159"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8bC-Xf-vdC" id="JrT-xv-qeA"/>
+                                    <outlet property="delegate" destination="8bC-Xf-vdC" id="qeF-eZ-tlv"/>
+                                </connections>
+                            </pickerView>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" image="USAF_logo.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zLP-tt-Dct" userLabel="imgUSAFLogo">
+                                <rect key="frame" x="0.0" y="0.0" width="370" height="382"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="btnSplashPage" destination="Afs-dk-jJJ" id="NmP-hx-1al"/>
+                        <outlet property="labelError" destination="bZb-LF-gim" id="L75-bX-jbj"/>
+                        <outlet property="pickerBases" destination="7pi-y0-40Y" id="ojl-zo-gtg"/>
+                        <segue destination="eZk-ku-1bE" kind="show" identifier="ToAirshowTable" id="fkQ-vY-ESf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1026" y="-2935"/>
+        </scene>
+        <!--Airshow Table-->
+        <scene sceneID="1T3-In-JN3">
+            <objects>
+                <viewController id="eZk-ku-1bE" customClass="AirshowTable" customModule="AirshowAppOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TbM-bn-Fkr"/>
+                        <viewControllerLayoutGuide type="bottom" id="kxp-Fc-bXc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wks-ga-slf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="ZOk-SD-ycJ" kind="show" identifier="ATTRACTIONS" id="ixx-70-d32"/>
+                        <segue destination="Hbu-E1-f8C" kind="show" identifier="ABOUT" id="Bzt-MN-C3D"/>
+                        <segue destination="ict-as-1fO" kind="show" identifier="PROHIBITED ITEMS" id="lLI-zu-tDF"/>
+                        <segue destination="7Yp-UR-qYz" kind="show" identifier="FAQ" id="YHl-xy-Rbv"/>
+                        <segue destination="Ijt-J6-V1b" kind="show" identifier="DIRECTIONS" id="3mY-4J-9Ee"/>
+                        <segue destination="R5B-5t-46w" kind="show" identifier="SETTINGS" id="nOe-mQ-fBC"/>
+                        <segue destination="VJs-d8-7ub" kind="show" identifier="SOCIAL MEDIA" id="ejC-Io-AOy"/>
+                        <segue destination="Zg8-t4-K3G" kind="show" identifier="PARKING" id="Ua1-B4-AUf"/>
+                        <segue destination="EXs-mw-16m" kind="show" identifier="PERFORMERS SCHEDULE" id="pxP-Q0-Lp2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XPM-aZ-0vt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1026" y="-2060"/>
+        </scene>
+        <!--About The Base-->
+        <scene sceneID="EzY-sn-Wxt">
+            <objects>
+                <viewController id="Hbu-E1-f8C" customClass="AboutTheBase" customModule="AirshowAppOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cXa-bH-4Sb"/>
+                        <viewControllerLayoutGuide type="bottom" id="0zb-Js-cSr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="krE-Kg-AOa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="eZk-ku-1bE" kind="show" identifier="AboutToAirshow" id="ypP-gr-Q1l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zKx-yl-nqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="-2849"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="jz1-Wl-GoY">
+            <objects>
+                <viewController id="R5B-5t-46w" customClass="Settings" customModule="AirshowAppOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gj5-yI-zTu"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bk4-Gz-lAq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qyp-kX-gTc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="eZk-ku-1bE" kind="show" identifier="SettingsToAirshow" id="xjI-rW-Mcb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ofS-Qj-vUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3586" y="-1087"/>
+        </scene>
+        <!--FAQ-->
+        <scene sceneID="wIl-bd-Mqo">
+            <objects>
+                <viewController id="7Yp-UR-qYz" customClass="FAQ" customModule="AirshowAppOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="eZk-ku-1bE" kind="show" identifier="FaqToAirshow" id="WT7-t3-fmw"/>
+                        <segue destination="miE-TE-HjE" kind="show" identifier="FaqToAnswer" id="b3f-Wk-O9t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Od6-oq-eaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3586" y="820"/>
+        </scene>
+        <!--Anwser-->
+        <scene sceneID="ZhE-F1-NNg">
+            <objects>
+                <viewController id="miE-TE-HjE" customClass="FAQAnwser" customModule="AirshowAppOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="7Yp-UR-qYz" kind="show" identifier="AnswerToFAQ" id="vVU-IQ-Adp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UDm-h9-t3F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2474" y="820"/>
+        </scene>
+        <!--Prohibited Items-->
+        <scene sceneID="2Hk-Vh-h3w">
+            <objects>
+                <viewController id="ict-as-1fO" customClass="ProhibitedItems" customModule="AirshowAppOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3QF-kd-eks"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bi3-M2-WSE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="93G-Gf-Mnj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="eZk-ku-1bE" kind="show" identifier="ProhibitedToAirshow" id="UWK-js-lhr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bn0-e4-g2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3586" y="-150"/>
+        </scene>
+        <!--New Social Media-->
+        <scene sceneID="euT-fu-LY6">
+            <objects>
+                <viewController id="VJs-d8-7ub" customClass="NewSocialMedia" customModule="AirshowAppOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e21-R0-DjC"/>
+                        <viewControllerLayoutGuide type="bottom" id="H8X-u7-Iel"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zy3-jW-QAw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fsf-ze-bfl">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell2" rowHeight="100" id="WwS-xF-r6Q" customClass="Custom2TableViewCell" customModule="AirshowAppOs" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WwS-xF-r6Q" id="vxc-Ul-z8d">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Pf-nv-lzd">
+                                                    <rect key="frame" x="10" y="5" width="355" height="89.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Twitter.png" translatesAutoresizingMaskIntoConstraints="NO" id="jdl-AP-qqI">
+                                                            <rect key="frame" x="0.0" y="8" width="80" height="74"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="80" id="1eU-dr-dZd"/>
+                                                                <constraint firstAttribute="width" constant="80" id="i69-5A-8jh"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Twitter" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiV-pO-vct">
+                                                            <rect key="frame" x="88" y="33" width="259" height="24"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="200" id="GDl-OJ-Mtg"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="uiV-pO-vct" secondAttribute="bottom" constant="25" id="5vB-7T-LUB"/>
+                                                        <constraint firstItem="jdl-AP-qqI" firstAttribute="leading" secondItem="9Pf-nv-lzd" secondAttribute="leading" constant="8" id="8zU-Ic-kn3"/>
+                                                        <constraint firstItem="jdl-AP-qqI" firstAttribute="leading" secondItem="9Pf-nv-lzd" secondAttribute="leading" id="B5S-Mq-0q7"/>
+                                                        <constraint firstAttribute="bottom" secondItem="jdl-AP-qqI" secondAttribute="bottom" constant="8" id="Md4-bA-7Dg"/>
+                                                        <constraint firstItem="uiV-pO-vct" firstAttribute="top" secondItem="9Pf-nv-lzd" secondAttribute="top" constant="25" id="Tl9-H2-Yb4"/>
+                                                        <constraint firstAttribute="bottom" secondItem="uiV-pO-vct" secondAttribute="bottom" constant="32.5" id="cms-eT-7QS"/>
+                                                        <constraint firstItem="uiV-pO-vct" firstAttribute="leading" secondItem="jdl-AP-qqI" secondAttribute="trailing" constant="8" id="eaG-ts-Xoa"/>
+                                                        <constraint firstItem="jdl-AP-qqI" firstAttribute="top" secondItem="9Pf-nv-lzd" secondAttribute="top" constant="8" id="exT-2M-vB9"/>
+                                                        <constraint firstItem="uiV-pO-vct" firstAttribute="leading" secondItem="jdl-AP-qqI" secondAttribute="trailing" constant="8" id="iMk-QX-ZfM"/>
+                                                        <constraint firstItem="jdl-AP-qqI" firstAttribute="leading" secondItem="9Pf-nv-lzd" secondAttribute="leading" id="jMC-o2-Ufq"/>
+                                                        <constraint firstAttribute="trailing" secondItem="uiV-pO-vct" secondAttribute="trailing" constant="8" id="l3M-zq-lV4"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="9Pf-nv-lzd" secondAttribute="bottom" constant="5" id="5ze-WN-U8f"/>
+                                                <constraint firstItem="9Pf-nv-lzd" firstAttribute="top" secondItem="vxc-Ul-z8d" secondAttribute="top" constant="5" id="FLg-Ex-kfG"/>
+                                                <constraint firstAttribute="trailing" secondItem="9Pf-nv-lzd" secondAttribute="trailing" constant="10" id="dhY-sy-XIM"/>
+                                                <constraint firstItem="9Pf-nv-lzd" firstAttribute="leading" secondItem="vxc-Ul-z8d" secondAttribute="leading" constant="10" id="jjk-rY-OWY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="linkImage" destination="jdl-AP-qqI" id="hqx-OJ-HGQ"/>
+                                            <outlet property="linkLabel" destination="uiV-pO-vct" id="MQQ-eb-ADy"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="grF-0h-75u">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="SOCIAL MEDIA" id="hpi-C9-ey6">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt;BACK" id="VHT-it-seP">
+                                            <connections>
+                                                <action selector="goBack:" destination="VJs-d8-7ub" id="Rfn-GD-5Ow"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H8X-u7-Iel" firstAttribute="top" secondItem="fsf-ze-bfl" secondAttribute="bottom" id="6rp-n8-8sq"/>
+                            <constraint firstAttribute="trailing" secondItem="fsf-ze-bfl" secondAttribute="trailing" id="Lad-YZ-yMr"/>
+                            <constraint firstAttribute="trailing" secondItem="fsf-ze-bfl" secondAttribute="trailing" id="MGl-yi-5G7"/>
+                            <constraint firstItem="fsf-ze-bfl" firstAttribute="top" secondItem="Zy3-jW-QAw" secondAttribute="top" id="Yed-3Z-eiE"/>
+                            <constraint firstItem="H8X-u7-Iel" firstAttribute="top" secondItem="fsf-ze-bfl" secondAttribute="bottom" id="ZU6-9Z-0km"/>
+                            <constraint firstItem="fsf-ze-bfl" firstAttribute="leading" secondItem="Zy3-jW-QAw" secondAttribute="leading" id="loB-md-YS5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="VHT-it-seP" id="ZeX-yk-lPf"/>
+                        <outlet property="navBar" destination="grF-0h-75u" id="zUu-pf-gjq"/>
+                        <outlet property="navTitle" destination="hpi-C9-ey6" id="ymw-yF-jQW"/>
+                        <outlet property="tableView" destination="fsf-ze-bfl" id="Nr5-PS-DEx"/>
+                        <segue destination="eZk-ku-1bE" kind="show" identifier="SocialToAirshow" id="tSA-Fg-zx4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nnY-WL-yGJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1530.4000000000001" y="-415.14242878560725"/>
+        </scene>
+        <!--Attractions-->
+        <scene sceneID="evR-qK-7Yg">
+            <objects>
+                <viewController id="ZOk-SD-ycJ" customClass="Attractions" customModule="AirshowAppOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bcp-6S-WVE"/>
+                        <viewControllerLayoutGuide type="bottom" id="fMC-6d-qDk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IS3-iX-X4H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="eZk-ku-1bE" kind="show" identifier="AttractionsToAirshow" id="SuM-uW-4Tb"/>
+                        <segue destination="6mA-Gb-dug" kind="show" identifier="PERFORMERS" id="t12-VW-5Yr"/>
+                        <segue destination="ajy-L6-1Ys" kind="show" identifier="VENDORS" id="tkk-fO-9nT"/>
+                        <segue destination="Dsr-Fz-TQU" kind="show" identifier="GROUND DISPLAYS" id="JEE-HJ-SPp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pUo-Ka-bY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="-1938"/>
+        </scene>
+        <!--Statics-->
+        <scene sceneID="Onk-HD-AYT">
+            <objects>
+                <viewController title="Statics" id="Dsr-Fz-TQU" userLabel="Statics" customClass="Static" customModule="AirshowAppOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WmN-mX-0ol"/>
+                        <viewControllerLayoutGuide type="bottom" id="iu0-cE-el6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NJi-4m-E98" userLabel="Statics">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" label="Statics"/>
+                    </view>
+                    <connections>
+                        <segue destination="ZOk-SD-ycJ" kind="show" identifier="StaticsToAttractions" id="6pY-Dw-YBL"/>
+                        <segue destination="v8v-Ph-pR6" kind="show" identifier="StaticsToDescription" id="ZJB-9Y-lUi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eSm-6c-wXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1927" y="-1177"/>
+        </scene>
+        <!--Performer Schedule-->
+        <scene sceneID="3ei-WC-pKt">
+            <objects>
+                <viewController id="EXs-mw-16m" customClass="PerformerSchedule" customModule="AirshowAppOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A6R-vz-8Py"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jba-70-Dl5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1C1-3S-39z" customClass="CustomTableViewCell" customModule="AirshowAppOs" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FCz-gX-l5X">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="eZk-ku-1bE" kind="show" identifier="ScheduleToAirshowTable" id="E0U-nt-Xfy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="he0-cg-Fra" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="-979"/>
+        </scene>
+        <!--AircraftDescriptions-->
+        <scene sceneID="S0q-KG-0Ip">
+            <objects>
+                <viewController title="AircraftDescriptions" id="v8v-Ph-pR6" customClass="AircraftDescriptions" customModule="AirshowAppOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ioj-pT-uzj"/>
+                        <viewControllerLayoutGuide type="bottom" id="KJ7-Zy-qct"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j8x-4Q-qLK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="6mA-Gb-dug" kind="show" identifier="AircraftDescriptionstoPerformers" id="gxM-Eq-dq1"/>
+                        <segue destination="Dsr-Fz-TQU" kind="show" identifier="DescriptionToStatic" id="ulW-wj-JQU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DAf-LS-6Us" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3794" y="-2060"/>
+        </scene>
+        <!--Performers-->
+        <scene sceneID="z7u-Uk-nBo">
+            <objects>
+                <viewController id="6mA-Gb-dug" customClass="Performers" customModule="AirshowAppOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ShX-rC-PU0"/>
+                        <viewControllerLayoutGuide type="bottom" id="3qe-Mq-Tsl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z95-Sq-aNG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t5a-sT-RQs">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="100" id="HBN-Fv-vPB" customClass="CustomTableViewCell" customModule="AirshowAppOs" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HBN-Fv-vPB" id="idp-vw-iLS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USAF ThunderBirds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMx-FX-Mg0">
+                                                    <rect key="frame" x="88" y="8" width="279" height="83.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="USAF ThunderBirds" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vw4-jv-CUV">
+                                                    <rect key="frame" x="0.0" y="9.5" width="80" height="80"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" image="YES" adjustable="YES"/>
+                                                    </accessibility>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="Xtr-n4-vXb"/>
+                                                        <constraint firstAttribute="width" constant="80" id="lad-y6-9rJ"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.312744140625" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="UMx-FX-Mg0" firstAttribute="leading" secondItem="vw4-jv-CUV" secondAttribute="trailing" constant="8" id="7d3-Ua-QN2"/>
+                                                <constraint firstAttribute="trailing" secondItem="UMx-FX-Mg0" secondAttribute="trailing" id="MGu-DT-ZT5"/>
+                                                <constraint firstAttribute="bottom" secondItem="UMx-FX-Mg0" secondAttribute="bottom" constant="8" id="Myd-mS-8kG"/>
+                                                <constraint firstItem="UMx-FX-Mg0" firstAttribute="top" secondItem="idp-vw-iLS" secondAttribute="top" constant="8" id="g1V-DI-OEX"/>
+                                                <constraint firstItem="vw4-jv-CUV" firstAttribute="leading" secondItem="idp-vw-iLS" secondAttribute="leading" id="gtK-sJ-NDs"/>
+                                                <constraint firstItem="vw4-jv-CUV" firstAttribute="centerY" secondItem="idp-vw-iLS" secondAttribute="centerY" id="kna-fN-wfa"/>
+                                                <constraint firstAttribute="trailing" secondItem="UMx-FX-Mg0" secondAttribute="trailing" constant="8" id="naV-nl-t5d"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="aircraftImage" destination="vw4-jv-CUV" id="WzB-yc-Mxt"/>
+                                            <outlet property="aircraftLabel" destination="UMx-FX-Mg0" id="Hdd-XY-MeL"/>
+                                            <outlet property="cellView" destination="idp-vw-iLS" id="I54-Yn-BRG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="t5a-sT-RQs" id="rbw-Wd-klr"/>
+                        <segue destination="ZOk-SD-ycJ" kind="show" identifier="PerformersToAttractions" id="V9b-ym-mjX"/>
+                        <segue destination="v8v-Ph-pR6" kind="show" identifier="PerformersToAircraftDescriptions" id="pld-RW-y3L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xCa-wK-bRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1910" y="-3099"/>
+        </scene>
+        <!--Vendors-->
+        <scene sceneID="Nd2-P0-jmK">
+            <objects>
+                <viewController id="ajy-L6-1Ys" customClass="Vendors" customModule="AirshowAppOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lGi-M7-hVP"/>
+                        <viewControllerLayoutGuide type="bottom" id="cx6-Qe-PsI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3E2-jo-5Eo" userLabel="Vendors">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" label="Vendors"/>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <segue destination="ZOk-SD-ycJ" kind="show" identifier="VendorsToAttractions" id="PGd-DU-DlB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6oT-o8-b3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1927" y="-2060"/>
+        </scene>
+        <!--Directions-->
+        <scene sceneID="viC-DA-PMX">
+            <objects>
+                <viewController id="Ijt-J6-V1b" customClass="Directions" customModule="AirshowAppOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QxP-2i-tk1"/>
+                        <viewControllerLayoutGuide type="bottom" id="T6G-gB-hfQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uFN-g4-zj2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EEd-sm-GxL">
+                                <rect key="frame" x="0.0" y="170" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="EEd-sm-GxL" id="gRR-IU-NWi"/>
+                        <segue destination="eZk-ku-1bE" kind="show" identifier="DirectionsToTable" id="IZ9-mI-9Yn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9P-0v-mwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3586" y="-2749"/>
+        </scene>
+        <!--Parking Lots-->
+        <scene sceneID="l7D-KZ-gR7">
+            <objects>
+                <viewController id="Zg8-t4-K3G" customClass="ParkingLots" customModule="AirshowAppOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HDe-i7-j6u"/>
+                        <viewControllerLayoutGuide type="bottom" id="ewF-Fm-1qR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kor-fa-BCe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="GPd-45-Hdn" kind="show" identifier="ParkingLot" id="k9i-Be-XSA"/>
+                        <segue destination="eZk-ku-1bE" kind="show" identifier="LotsToAirshowTable" id="sIk-m3-sCb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HIW-zQ-2sv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3255.1999999999998" y="-1896.7016491754125"/>
+        </scene>
+        <!--Map For Parking-->
+        <scene sceneID="TBR-MB-NjY">
+            <objects>
+                <viewController id="GPd-45-Hdn" customClass="MapForParking" customModule="AirshowAppOs" customModuleProvider="target" sceneMemberID="viewController">
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="m9s-2h-1FH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </mapView>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="MapParking" destination="m9s-2h-1FH" id="KPu-xC-mXN"/>
+                        <segue destination="Zg8-t4-K3G" kind="show" identifier="BackToLots" id="zKS-ab-8LM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bOJ-iR-PYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4527" y="-1895"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Twitter.png" width="320" height="260"/>
+        <image name="USAF ThunderBirds" width="216" height="144"/>
+        <image name="USAF_logo.png" width="1344" height="1128"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ua1-B4-AUf"/>
+        <segue reference="t12-VW-5Yr"/>
+        <segue reference="pld-RW-y3L"/>
+        <segue reference="JEE-HJ-SPp"/>
+        <segue reference="ixx-70-d32"/>
+        <segue reference="YHl-xy-Rbv"/>
+        <segue reference="E0U-nt-Xfy"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		352F4C268B1BA7F89DE02384 /* Pods_AirshowAppOs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DD4B37C42921DE76EEE2BC /* Pods_AirshowAppOs.framework */; };
+		408645A47267D92F18FA5556 /* Pods_AirshowAppOsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C0B22A4275F7BE1F0E9785 /* Pods_AirshowAppOsUITests.framework */; };
+		C345B55372EBF484A0A77773 /* Pods_AirshowAppOsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCC54E2816EEE7311AF6D75 /* Pods_AirshowAppOsTests.framework */; };
+		D2057D3D2047352500DDEF10 /* NewSocialMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2057D3C2047352500DDEF10 /* NewSocialMedia.swift */; };
+		D2057D3F2047370400DDEF10 /* Custom2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2057D3E2047370400DDEF10 /* Custom2TableViewCell.swift */; };
+		D2057D432047406800DDEF10 /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = D2057D402047406800DDEF10 /* Facebook.png */; };
+		D2057D452047406800DDEF10 /* Website.png in Resources */ = {isa = PBXBuildFile; fileRef = D2057D422047406800DDEF10 /* Website.png */; };
+		D2057D492048525E00DDEF10 /* Vendors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2057D482048525E00DDEF10 /* Vendors.swift */; };
+		D2057D4B204F1B6F00DDEF10 /* Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2057D4A204F1B6F00DDEF10 /* Static.swift */; };
+		D21CB5E71FBB2C2900882C26 /* USAFLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D21CB5E61FBB2C2900882C26 /* USAFLogo.jpg */; };
+		D227D53520BF42FA0070BE42 /* PListConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D227D53420BF42FA0070BE42 /* PListConnection.swift */; };
+		D227D53720C18DD20070BE42 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D227D53620C18DD20070BE42 /* Images.swift */; };
+		D22EB02F202CF2D400253B33 /* Directions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22EB02E202CF2D400253B33 /* Directions.swift */; };
+		D253785D207BFED800B5571A /* myBaseData.plist in Resources */ = {isa = PBXBuildFile; fileRef = D253785C207BFED800B5571A /* myBaseData.plist */; };
+		D253785F207CFFA100B5571A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D253785E207CFFA100B5571A /* GoogleService-Info.plist */; };
+		D2537860207CFFA100B5571A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D253785E207CFFA100B5571A /* GoogleService-Info.plist */; };
+		D2537861207CFFA100B5571A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D253785E207CFFA100B5571A /* GoogleService-Info.plist */; };
+		D25378672087C03800B5571A /* AircraftDescriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25378662087C03800B5571A /* AircraftDescriptions.swift */; };
+		D25378692089285700B5571A /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25378682089285700B5571A /* Database.swift */; };
+		D253786B2098F67B00B5571A /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D253786A2098F67B00B5571A /* LaunchScreen.swift */; };
+		D253786D20A1FCD300B5571A /* InfoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D253786C20A1FCD300B5571A /* InfoStore.swift */; };
+		D2658DB120164211002213CC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2658DB020164211002213CC /* CustomTableViewCell.swift */; };
+		D267B8E32010E85500710A93 /* Performers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267B8E22010E85500710A93 /* Performers.swift */; };
+		D27466DC1FCCAFF600E2C3A4 /* ParkingMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27466DB1FCCAFF600E2C3A4 /* ParkingMap.swift */; };
+		D27466DE1FCDA17700E2C3A4 /* AirshowTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27466DD1FCDA17700E2C3A4 /* AirshowTable.swift */; };
+		D27466E01FCDBD7700E2C3A4 /* PlotPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27466DF1FCDBD7700E2C3A4 /* PlotPoints.swift */; };
+		D27466E61FD1DDC700E2C3A4 /* Attractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27466E51FD1DDC700E2C3A4 /* Attractions.swift */; };
+		D27A08C020322BA90098300B /* AboutTheBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A08BF20322BA90098300B /* AboutTheBase.swift */; };
+		D27A08C42035C6F60098300B /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A08C32035C6F60098300B /* FAQ.swift */; };
+		D27A08C6203CC3D20098300B /* ProhibitedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A08C5203CC3D20098300B /* ProhibitedItems.swift */; };
+		D27A08C8203DC3680098300B /* FAQAnwser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A08C7203DC3680098300B /* FAQAnwser.swift */; };
+		D27A08CC203DE8C20098300B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A08CB203DE8C20098300B /* Settings.swift */; };
+		D2B218C120CAD58800C429EA /* PerformerSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B218C020CAD58700C429EA /* PerformerSchedule.swift */; };
 		D2BF9D0F1FBA31BD00BAD314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BF9D0E1FBA31BD00BAD314 /* AppDelegate.swift */; };
 		D2BF9D111FBA31BD00BAD314 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BF9D101FBA31BD00BAD314 /* ViewController.swift */; };
 		D2BF9D141FBA31BD00BAD314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BF9D121FBA31BD00BAD314 /* Main.storyboard */; };
@@ -14,6 +47,12 @@
 		D2BF9D191FBA31BD00BAD314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BF9D171FBA31BD00BAD314 /* LaunchScreen.storyboard */; };
 		D2BF9D241FBA31BD00BAD314 /* AirshowAppOsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BF9D231FBA31BD00BAD314 /* AirshowAppOsTests.swift */; };
 		D2BF9D2F1FBA31BD00BAD314 /* AirshowAppOsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BF9D2E1FBA31BD00BAD314 /* AirshowAppOsUITests.swift */; };
+		D2D1E77720C855070030C8A4 /* newSplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2D1E77620C855070030C8A4 /* newSplash.jpg */; };
+		D2D1E77D20C9605D0030C8A4 /* Instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D1E77C20C9605C0030C8A4 /* Instagram.png */; };
+		D2D1E77F20C964460030C8A4 /* ParkingLots.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D1E77E20C964460030C8A4 /* ParkingLots.swift */; };
+		D2E51ECD20D97AB300E2752B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E51ECC20D97AB300E2752B /* MapKit.framework */; };
+		D2E51ED120E2745A00E2752B /* Twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E51ED020E2745900E2752B /* Twitter.png */; };
+		D2E51ED320E2752700E2752B /* USAF_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E51ED220E2752600E2752B /* USAF_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +73,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31A9336195F7CE7B7A53DA0C /* Pods-AirshowAppOsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirshowAppOsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirshowAppOsTests/Pods-AirshowAppOsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		32C0B22A4275F7BE1F0E9785 /* Pods_AirshowAppOsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirshowAppOsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54B9BEEB6CBD908B912B09BF /* Pods-AirshowAppOsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirshowAppOsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirshowAppOsTests/Pods-AirshowAppOsTests.release.xcconfig"; sourceTree = "<group>"; };
+		5DCC54E2816EEE7311AF6D75 /* Pods_AirshowAppOsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirshowAppOsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C138C7FD3CEF4BCB614EA8D /* Pods-AirshowAppOs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirshowAppOs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirshowAppOs/Pods-AirshowAppOs.debug.xcconfig"; sourceTree = "<group>"; };
+		92951F21D4C6EFA5D752EA94 /* Pods-AirshowAppOs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirshowAppOs.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirshowAppOs/Pods-AirshowAppOs.release.xcconfig"; sourceTree = "<group>"; };
+		BA35636540EEC556A197FA0A /* Pods-AirshowAppOsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirshowAppOsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirshowAppOsUITests/Pods-AirshowAppOsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2057D3C2047352500DDEF10 /* NewSocialMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSocialMedia.swift; sourceTree = "<group>"; };
+		D2057D3E2047370400DDEF10 /* Custom2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom2TableViewCell.swift; sourceTree = "<group>"; };
+		D2057D402047406800DDEF10 /* Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook.png; sourceTree = "<group>"; };
+		D2057D422047406800DDEF10 /* Website.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Website.png; sourceTree = "<group>"; };
+		D2057D482048525E00DDEF10 /* Vendors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vendors.swift; sourceTree = "<group>"; };
+		D2057D4A204F1B6F00DDEF10 /* Static.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Static.swift; sourceTree = "<group>"; };
+		D21CB5E61FBB2C2900882C26 /* USAFLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = USAFLogo.jpg; path = Assets.xcassets/USAFLogo.jpg; sourceTree = "<group>"; };
+		D227D53420BF42FA0070BE42 /* PListConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PListConnection.swift; sourceTree = "<group>"; };
+		D227D53620C18DD20070BE42 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		D22EB02E202CF2D400253B33 /* Directions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Directions.swift; sourceTree = "<group>"; };
+		D23F453220D4036600FE1411 /* AirshowAppOs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AirshowAppOs.entitlements; sourceTree = "<group>"; };
+		D253785C207BFED800B5571A /* myBaseData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = myBaseData.plist; sourceTree = "<group>"; };
+		D253785E207CFFA100B5571A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D25378662087C03800B5571A /* AircraftDescriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftDescriptions.swift; sourceTree = "<group>"; };
+		D25378682089285700B5571A /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		D253786A2098F67B00B5571A /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		D253786C20A1FCD300B5571A /* InfoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoStore.swift; sourceTree = "<group>"; };
+		D2658DB020164211002213CC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		D267B8E22010E85500710A93 /* Performers.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Performers.swift; sourceTree = "<group>"; };
+		D27466DB1FCCAFF600E2C3A4 /* ParkingMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingMap.swift; sourceTree = "<group>"; };
+		D27466DD1FCDA17700E2C3A4 /* AirshowTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirshowTable.swift; sourceTree = "<group>"; };
+		D27466DF1FCDBD7700E2C3A4 /* PlotPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotPoints.swift; sourceTree = "<group>"; };
+		D27466E51FD1DDC700E2C3A4 /* Attractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attractions.swift; sourceTree = "<group>"; };
+		D27A08BF20322BA90098300B /* AboutTheBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTheBase.swift; sourceTree = "<group>"; };
+		D27A08C32035C6F60098300B /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
+		D27A08C5203CC3D20098300B /* ProhibitedItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProhibitedItems.swift; sourceTree = "<group>"; };
+		D27A08C7203DC3680098300B /* FAQAnwser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQAnwser.swift; sourceTree = "<group>"; };
+		D27A08CB203DE8C20098300B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		D2B218C020CAD58700C429EA /* PerformerSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformerSchedule.swift; sourceTree = "<group>"; };
 		D2BF9D0B1FBA31BD00BAD314 /* AirshowAppOs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirshowAppOs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BF9D0E1FBA31BD00BAD314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2BF9D101FBA31BD00BAD314 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +122,14 @@
 		D2BF9D2A1FBA31BD00BAD314 /* AirshowAppOsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirshowAppOsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BF9D2E1FBA31BD00BAD314 /* AirshowAppOsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirshowAppOsUITests.swift; sourceTree = "<group>"; };
 		D2BF9D301FBA31BD00BAD314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D1E77620C855070030C8A4 /* newSplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = newSplash.jpg; sourceTree = "<group>"; };
+		D2D1E77C20C9605C0030C8A4 /* Instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Instagram.png; sourceTree = "<group>"; };
+		D2D1E77E20C964460030C8A4 /* ParkingLots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLots.swift; sourceTree = "<group>"; };
+		D2E51ECC20D97AB300E2752B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D2E51ED020E2745900E2752B /* Twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Twitter.png; path = ../../Twitter.png; sourceTree = "<group>"; };
+		D2E51ED220E2752600E2752B /* USAF_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USAF_logo.png; sourceTree = "<group>"; };
+		F0DD4B37C42921DE76EEE2BC /* Pods_AirshowAppOs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirshowAppOs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7D38B468AD6778886566ED /* Pods-AirshowAppOsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirshowAppOsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirshowAppOsUITests/Pods-AirshowAppOsUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +137,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E51ECD20D97AB300E2752B /* MapKit.framework in Frameworks */,
+				352F4C268B1BA7F89DE02384 /* Pods_AirshowAppOs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C345B55372EBF484A0A77773 /* Pods_AirshowAppOsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +154,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				408645A47267D92F18FA5556 /* Pods_AirshowAppOsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20A8D596D0120E52A7A2ED1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2E51ECC20D97AB300E2752B /* MapKit.framework */,
+				F0DD4B37C42921DE76EEE2BC /* Pods_AirshowAppOs.framework */,
+				5DCC54E2816EEE7311AF6D75 /* Pods_AirshowAppOsTests.framework */,
+				32C0B22A4275F7BE1F0E9785 /* Pods_AirshowAppOsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		896FFE9A9846F92CF15DC14F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C138C7FD3CEF4BCB614EA8D /* Pods-AirshowAppOs.debug.xcconfig */,
+				92951F21D4C6EFA5D752EA94 /* Pods-AirshowAppOs.release.xcconfig */,
+				31A9336195F7CE7B7A53DA0C /* Pods-AirshowAppOsTests.debug.xcconfig */,
+				54B9BEEB6CBD908B912B09BF /* Pods-AirshowAppOsTests.release.xcconfig */,
+				BA35636540EEC556A197FA0A /* Pods-AirshowAppOsUITests.debug.xcconfig */,
+				FB7D38B468AD6778886566ED /* Pods-AirshowAppOsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D2BF9D021FBA31BD00BAD314 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +192,8 @@
 				D2BF9D221FBA31BD00BAD314 /* AirshowAppOsTests */,
 				D2BF9D2D1FBA31BD00BAD314 /* AirshowAppOsUITests */,
 				D2BF9D0C1FBA31BD00BAD314 /* Products */,
+				896FFE9A9846F92CF15DC14F /* Pods */,
+				20A8D596D0120E52A7A2ED1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +210,46 @@
 		D2BF9D0D1FBA31BD00BAD314 /* AirshowAppOs */ = {
 			isa = PBXGroup;
 			children = (
+				D23F453220D4036600FE1411 /* AirshowAppOs.entitlements */,
+				D27A08BF20322BA90098300B /* AboutTheBase.swift */,
+				D25378662087C03800B5571A /* AircraftDescriptions.swift */,
+				D27466DD1FCDA17700E2C3A4 /* AirshowTable.swift */,
 				D2BF9D0E1FBA31BD00BAD314 /* AppDelegate.swift */,
-				D2BF9D101FBA31BD00BAD314 /* ViewController.swift */,
-				D2BF9D121FBA31BD00BAD314 /* Main.storyboard */,
 				D2BF9D151FBA31BD00BAD314 /* Assets.xcassets */,
-				D2BF9D171FBA31BD00BAD314 /* LaunchScreen.storyboard */,
+				D27466E51FD1DDC700E2C3A4 /* Attractions.swift */,
+				D2057D3E2047370400DDEF10 /* Custom2TableViewCell.swift */,
+				D2658DB020164211002213CC /* CustomTableViewCell.swift */,
+				D25378682089285700B5571A /* Database.swift */,
+				D22EB02E202CF2D400253B33 /* Directions.swift */,
+				D2057D402047406800DDEF10 /* Facebook.png */,
+				D27A08C32035C6F60098300B /* FAQ.swift */,
+				D27A08C7203DC3680098300B /* FAQAnwser.swift */,
+				D2B218C020CAD58700C429EA /* PerformerSchedule.swift */,
+				D253785E207CFFA100B5571A /* GoogleService-Info.plist */,
+				D227D53620C18DD20070BE42 /* Images.swift */,
 				D2BF9D1A1FBA31BD00BAD314 /* Info.plist */,
+				D253786C20A1FCD300B5571A /* InfoStore.swift */,
+				D2D1E77C20C9605C0030C8A4 /* Instagram.png */,
+				D2BF9D171FBA31BD00BAD314 /* LaunchScreen.storyboard */,
+				D253786A2098F67B00B5571A /* LaunchScreen.swift */,
+				D2BF9D121FBA31BD00BAD314 /* Main.storyboard */,
+				D253785C207BFED800B5571A /* myBaseData.plist */,
+				D2057D3C2047352500DDEF10 /* NewSocialMedia.swift */,
+				D2D1E77620C855070030C8A4 /* newSplash.jpg */,
+				D2D1E77E20C964460030C8A4 /* ParkingLots.swift */,
+				D27466DB1FCCAFF600E2C3A4 /* ParkingMap.swift */,
+				D267B8E22010E85500710A93 /* Performers.swift */,
+				D227D53420BF42FA0070BE42 /* PListConnection.swift */,
+				D27466DF1FCDBD7700E2C3A4 /* PlotPoints.swift */,
+				D2E51ED020E2745900E2752B /* Twitter.png */,
+				D27A08C5203CC3D20098300B /* ProhibitedItems.swift */,
+				D27A08CB203DE8C20098300B /* Settings.swift */,
+				D2057D4A204F1B6F00DDEF10 /* Static.swift */,
+				D2E51ED220E2752600E2752B /* USAF_logo.png */,
+				D21CB5E61FBB2C2900882C26 /* USAFLogo.jpg */,
+				D2057D482048525E00DDEF10 /* Vendors.swift */,
+				D2BF9D101FBA31BD00BAD314 /* ViewController.swift */,
+				D2057D422047406800DDEF10 /* Website.png */,
 			);
 			path = AirshowAppOs;
 			sourceTree = "<group>";
@@ -132,9 +279,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2BF9D331FBA31BD00BAD314 /* Build configuration list for PBXNativeTarget "AirshowAppOs" */;
 			buildPhases = (
+				2CFB71FEB3C8B0B8F452ADD8 /* [CP] Check Pods Manifest.lock */,
 				D2BF9D071FBA31BD00BAD314 /* Sources */,
 				D2BF9D081FBA31BD00BAD314 /* Frameworks */,
 				D2BF9D091FBA31BD00BAD314 /* Resources */,
+				B57083F14D6489A3D0F91A33 /* [CP] Embed Pods Frameworks */,
+				873F1BB271E1143A4BE6926B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +299,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2BF9D361FBA31BD00BAD314 /* Build configuration list for PBXNativeTarget "AirshowAppOsTests" */;
 			buildPhases = (
+				0B4EC0FE9DD26F7B9524D016 /* [CP] Check Pods Manifest.lock */,
 				D2BF9D1B1FBA31BD00BAD314 /* Sources */,
 				D2BF9D1C1FBA31BD00BAD314 /* Frameworks */,
 				D2BF9D1D1FBA31BD00BAD314 /* Resources */,
+				616DCB6B41D6F1B6D90A0BF4 /* [CP] Embed Pods Frameworks */,
+				3C3E963299AAA30C0D604D34 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +320,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2BF9D391FBA31BD00BAD314 /* Build configuration list for PBXNativeTarget "AirshowAppOsUITests" */;
 			buildPhases = (
+				C423701AEA404FC5DC29371B /* [CP] Check Pods Manifest.lock */,
 				D2BF9D261FBA31BD00BAD314 /* Sources */,
 				D2BF9D271FBA31BD00BAD314 /* Frameworks */,
 				D2BF9D281FBA31BD00BAD314 /* Resources */,
+				64D32964D525E22A8B538E7A /* [CP] Embed Pods Frameworks */,
+				8FAA1624605947B1B642E1BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +350,14 @@
 					D2BF9D0A1FBA31BD00BAD314 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					D2BF9D1E1FBA31BD00BAD314 = {
 						CreatedOnToolsVersion = 9.1;
@@ -232,9 +396,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2057D452047406800DDEF10 /* Website.png in Resources */,
 				D2BF9D191FBA31BD00BAD314 /* LaunchScreen.storyboard in Resources */,
+				D2D1E77720C855070030C8A4 /* newSplash.jpg in Resources */,
+				D2057D432047406800DDEF10 /* Facebook.png in Resources */,
+				D2D1E77D20C9605D0030C8A4 /* Instagram.png in Resources */,
+				D2E51ED120E2745A00E2752B /* Twitter.png in Resources */,
 				D2BF9D161FBA31BD00BAD314 /* Assets.xcassets in Resources */,
+				D2E51ED320E2752700E2752B /* USAF_logo.png in Resources */,
 				D2BF9D141FBA31BD00BAD314 /* Main.storyboard in Resources */,
+				D253785D207BFED800B5571A /* myBaseData.plist in Resources */,
+				D21CB5E71FBB2C2900882C26 /* USAFLogo.jpg in Resources */,
+				D253785F207CFFA100B5571A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +415,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2537860207CFFA100B5571A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,18 +423,206 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2537861207CFFA100B5571A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B4EC0FE9DD26F7B9524D016 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirshowAppOsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CFB71FEB3C8B0B8F452ADD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirshowAppOs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C3E963299AAA30C0D604D34 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirshowAppOsTests/Pods-AirshowAppOsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		616DCB6B41D6F1B6D90A0BF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AirshowAppOsTests/Pods-AirshowAppOsTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MySqlSwiftNative/MySqlSwiftNative.framework",
+				"${BUILT_PRODUCTS_DIR}/YUTableView/YUTableView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MySqlSwiftNative.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YUTableView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirshowAppOsTests/Pods-AirshowAppOsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64D32964D525E22A8B538E7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirshowAppOsUITests/Pods-AirshowAppOsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		873F1BB271E1143A4BE6926B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirshowAppOs/Pods-AirshowAppOs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FAA1624605947B1B642E1BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirshowAppOsUITests/Pods-AirshowAppOsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B57083F14D6489A3D0F91A33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AirshowAppOs/Pods-AirshowAppOs-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirshowAppOs/Pods-AirshowAppOs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C423701AEA404FC5DC29371B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirshowAppOsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2BF9D071FBA31BD00BAD314 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25378692089285700B5571A /* Database.swift in Sources */,
+				D253786B2098F67B00B5571A /* LaunchScreen.swift in Sources */,
+				D227D53520BF42FA0070BE42 /* PListConnection.swift in Sources */,
+				D2D1E77F20C964460030C8A4 /* ParkingLots.swift in Sources */,
 				D2BF9D111FBA31BD00BAD314 /* ViewController.swift in Sources */,
+				D27466DE1FCDA17700E2C3A4 /* AirshowTable.swift in Sources */,
+				D27A08C020322BA90098300B /* AboutTheBase.swift in Sources */,
+				D267B8E32010E85500710A93 /* Performers.swift in Sources */,
+				D27A08C8203DC3680098300B /* FAQAnwser.swift in Sources */,
+				D27A08CC203DE8C20098300B /* Settings.swift in Sources */,
+				D253786D20A1FCD300B5571A /* InfoStore.swift in Sources */,
+				D2057D3F2047370400DDEF10 /* Custom2TableViewCell.swift in Sources */,
+				D2057D3D2047352500DDEF10 /* NewSocialMedia.swift in Sources */,
+				D22EB02F202CF2D400253B33 /* Directions.swift in Sources */,
+				D27466DC1FCCAFF600E2C3A4 /* ParkingMap.swift in Sources */,
+				D27A08C42035C6F60098300B /* FAQ.swift in Sources */,
+				D227D53720C18DD20070BE42 /* Images.swift in Sources */,
+				D27466E61FD1DDC700E2C3A4 /* Attractions.swift in Sources */,
+				D2658DB120164211002213CC /* CustomTableViewCell.swift in Sources */,
+				D25378672087C03800B5571A /* AircraftDescriptions.swift in Sources */,
+				D2B218C120CAD58800C429EA /* PerformerSchedule.swift in Sources */,
+				D2057D492048525E00DDEF10 /* Vendors.swift in Sources */,
 				D2BF9D0F1FBA31BD00BAD314 /* AppDelegate.swift in Sources */,
+				D27A08C6203CC3D20098300B /* ProhibitedItems.swift in Sources */,
+				D27466E01FCDBD7700E2C3A4 /* PlotPoints.swift in Sources */,
+				D2057D4B204F1B6F00DDEF10 /* Static.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,10 +786,13 @@
 		};
 		D2BF9D341FBA31BD00BAD314 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C138C7FD3CEF4BCB614EA8D /* Pods-AirshowAppOs.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AirshowAppOs/AirshowAppOs.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZNZ9BV342D;
 				INFOPLIST_FILE = AirshowAppOs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.AirshowAppOs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,10 +803,13 @@
 		};
 		D2BF9D351FBA31BD00BAD314 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92951F21D4C6EFA5D752EA94 /* Pods-AirshowAppOs.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AirshowAppOs/AirshowAppOs.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZNZ9BV342D;
 				INFOPLIST_FILE = AirshowAppOs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.AirshowAppOs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -452,6 +820,7 @@
 		};
 		D2BF9D371FBA31BD00BAD314 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31A9336195F7CE7B7A53DA0C /* Pods-AirshowAppOsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +837,7 @@
 		};
 		D2BF9D381FBA31BD00BAD314 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B9BEEB6CBD908B912B09BF /* Pods-AirshowAppOsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +854,7 @@
 		};
 		D2BF9D3A1FBA31BD00BAD314 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA35636540EEC556A197FA0A /* Pods-AirshowAppOsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +870,7 @@
 		};
 		D2BF9D3B1FBA31BD00BAD314 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB7D38B468AD6778886566ED /* Pods-AirshowAppOsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
