@@ -43,8 +43,9 @@ class Performers: UIViewController, UITableViewDelegate, UITableViewDataSource{
         
         navBar.setItems([navItem], animated: false)
         
+        
         selectedAirshowIndex = getIndexOfSelectedAirshow()
-        aircrafts = (InfoStore.getDatabase().airshows[selectedAirshowIndex]?.InAirPerformers())!
+        aircrafts = (InfoStore.getDatabase().airshows[0]?.InAirPerformers())!
         //adds the navigation bar to the view controller
         self.view.backgroundColor = .gray
         tableView.delegate = self
@@ -136,15 +137,17 @@ class Performers: UIViewController, UITableViewDelegate, UITableViewDataSource{
             }
     }
     func getIndexOfSelectedAirshow() -> Int{
-        var index: Int = 0
-        for airshow in InfoStore.getDatabase().airshows {
-            if (airshow?.name == basePassed){
-                return index
-            } else {
-                index += 1
-            }
-        }
-        return 200
+        return 0
+        /*var index: Int = 0
+         for airshow in InfoStore.getDatabase().airshows {
+         if (airshow?.name == basePassed){
+         return index
+         } else {
+         index += 1
+         }
+         }
+         return 200
+         */
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

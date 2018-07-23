@@ -136,7 +136,8 @@ class ParkingLots: UIViewController, UITableViewDelegate, UITableViewDataSource{
         // Dispose of any resources that can be recreated.
     }
     func getIndexOfSelectedAirshow() -> Int{
-        var index: Int = 0
+        return 0
+        /*var index: Int = 0
         for airshow in InfoStore.getDatabase().airshows {
             if (airshow?.name == basePassed){
                 return index
@@ -145,6 +146,7 @@ class ParkingLots: UIViewController, UITableViewDelegate, UITableViewDataSource{
             }
         }
         return 200
+*/
     }
 }
 

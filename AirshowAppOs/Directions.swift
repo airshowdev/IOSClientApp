@@ -52,7 +52,8 @@ class Directions: UIViewController{
         mapView.setRegion(coordinateRegion, animated: true)
     }
     func getIndexOfSelectedAirshow() -> Int{
-        var index: Int = 0
+       return 0
+        /* var index: Int = 0
         for airshow in InfoStore.getDatabase().airshows {
             if (airshow?.name == basePassed){
                 return index
@@ -61,6 +62,7 @@ class Directions: UIViewController{
             }
         }
         return 200
+ */
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

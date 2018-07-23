@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		352F4C268B1BA7F89DE02384 /* Pods_AirshowAppOs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DD4B37C42921DE76EEE2BC /* Pods_AirshowAppOs.framework */; };
 		408645A47267D92F18FA5556 /* Pods_AirshowAppOsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C0B22A4275F7BE1F0E9785 /* Pods_AirshowAppOsUITests.framework */; };
+		A8EA1ED920FFC1EA00A9B630 /* Twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = A8EA1ED820FFC1EA00A9B630 /* Twitter.png */; };
 		C345B55372EBF484A0A77773 /* Pods_AirshowAppOsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCC54E2816EEE7311AF6D75 /* Pods_AirshowAppOsTests.framework */; };
 		D2057D3D2047352500DDEF10 /* NewSocialMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2057D3C2047352500DDEF10 /* NewSocialMedia.swift */; };
 		D2057D3F2047370400DDEF10 /* Custom2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2057D3E2047370400DDEF10 /* Custom2TableViewCell.swift */; };
@@ -51,7 +52,6 @@
 		D2D1E77D20C9605D0030C8A4 /* Instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D1E77C20C9605C0030C8A4 /* Instagram.png */; };
 		D2D1E77F20C964460030C8A4 /* ParkingLots.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D1E77E20C964460030C8A4 /* ParkingLots.swift */; };
 		D2E51ECD20D97AB300E2752B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E51ECC20D97AB300E2752B /* MapKit.framework */; };
-		D2E51ED120E2745A00E2752B /* Twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E51ED020E2745900E2752B /* Twitter.png */; };
 		D2E51ED320E2752700E2752B /* USAF_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E51ED220E2752600E2752B /* USAF_logo.png */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +79,7 @@
 		5DCC54E2816EEE7311AF6D75 /* Pods_AirshowAppOsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirshowAppOsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C138C7FD3CEF4BCB614EA8D /* Pods-AirshowAppOs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirshowAppOs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirshowAppOs/Pods-AirshowAppOs.debug.xcconfig"; sourceTree = "<group>"; };
 		92951F21D4C6EFA5D752EA94 /* Pods-AirshowAppOs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirshowAppOs.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirshowAppOs/Pods-AirshowAppOs.release.xcconfig"; sourceTree = "<group>"; };
+		A8EA1ED820FFC1EA00A9B630 /* Twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twitter.png; sourceTree = "<group>"; };
 		BA35636540EEC556A197FA0A /* Pods-AirshowAppOsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirshowAppOsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirshowAppOsUITests/Pods-AirshowAppOsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D2057D3C2047352500DDEF10 /* NewSocialMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSocialMedia.swift; sourceTree = "<group>"; };
 		D2057D3E2047370400DDEF10 /* Custom2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom2TableViewCell.swift; sourceTree = "<group>"; };
@@ -126,7 +127,6 @@
 		D2D1E77C20C9605C0030C8A4 /* Instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Instagram.png; sourceTree = "<group>"; };
 		D2D1E77E20C964460030C8A4 /* ParkingLots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLots.swift; sourceTree = "<group>"; };
 		D2E51ECC20D97AB300E2752B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		D2E51ED020E2745900E2752B /* Twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Twitter.png; path = ../../Twitter.png; sourceTree = "<group>"; };
 		D2E51ED220E2752600E2752B /* USAF_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USAF_logo.png; sourceTree = "<group>"; };
 		F0DD4B37C42921DE76EEE2BC /* Pods_AirshowAppOs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirshowAppOs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7D38B468AD6778886566ED /* Pods-AirshowAppOsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirshowAppOsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirshowAppOsUITests/Pods-AirshowAppOsUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -210,9 +210,9 @@
 		D2BF9D0D1FBA31BD00BAD314 /* AirshowAppOs */ = {
 			isa = PBXGroup;
 			children = (
-				D23F453220D4036600FE1411 /* AirshowAppOs.entitlements */,
 				D27A08BF20322BA90098300B /* AboutTheBase.swift */,
 				D25378662087C03800B5571A /* AircraftDescriptions.swift */,
+				D23F453220D4036600FE1411 /* AirshowAppOs.entitlements */,
 				D27466DD1FCDA17700E2C3A4 /* AirshowTable.swift */,
 				D2BF9D0E1FBA31BD00BAD314 /* AppDelegate.swift */,
 				D2BF9D151FBA31BD00BAD314 /* Assets.xcassets */,
@@ -224,7 +224,6 @@
 				D2057D402047406800DDEF10 /* Facebook.png */,
 				D27A08C32035C6F60098300B /* FAQ.swift */,
 				D27A08C7203DC3680098300B /* FAQAnwser.swift */,
-				D2B218C020CAD58700C429EA /* PerformerSchedule.swift */,
 				D253785E207CFFA100B5571A /* GoogleService-Info.plist */,
 				D227D53620C18DD20070BE42 /* Images.swift */,
 				D2BF9D1A1FBA31BD00BAD314 /* Info.plist */,
@@ -239,12 +238,13 @@
 				D2D1E77E20C964460030C8A4 /* ParkingLots.swift */,
 				D27466DB1FCCAFF600E2C3A4 /* ParkingMap.swift */,
 				D267B8E22010E85500710A93 /* Performers.swift */,
+				D2B218C020CAD58700C429EA /* PerformerSchedule.swift */,
 				D227D53420BF42FA0070BE42 /* PListConnection.swift */,
 				D27466DF1FCDBD7700E2C3A4 /* PlotPoints.swift */,
-				D2E51ED020E2745900E2752B /* Twitter.png */,
 				D27A08C5203CC3D20098300B /* ProhibitedItems.swift */,
 				D27A08CB203DE8C20098300B /* Settings.swift */,
 				D2057D4A204F1B6F00DDEF10 /* Static.swift */,
+				A8EA1ED820FFC1EA00A9B630 /* Twitter.png */,
 				D2E51ED220E2752600E2752B /* USAF_logo.png */,
 				D21CB5E61FBB2C2900882C26 /* USAFLogo.jpg */,
 				D2057D482048525E00DDEF10 /* Vendors.swift */,
@@ -396,13 +396,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2BF9D161FBA31BD00BAD314 /* Assets.xcassets in Resources */,
 				D2057D452047406800DDEF10 /* Website.png in Resources */,
 				D2BF9D191FBA31BD00BAD314 /* LaunchScreen.storyboard in Resources */,
 				D2D1E77720C855070030C8A4 /* newSplash.jpg in Resources */,
 				D2057D432047406800DDEF10 /* Facebook.png in Resources */,
 				D2D1E77D20C9605D0030C8A4 /* Instagram.png in Resources */,
-				D2E51ED120E2745A00E2752B /* Twitter.png in Resources */,
-				D2BF9D161FBA31BD00BAD314 /* Assets.xcassets in Resources */,
+				A8EA1ED920FFC1EA00A9B630 /* Twitter.png in Resources */,
 				D2E51ED320E2752700E2752B /* USAF_logo.png in Resources */,
 				D2BF9D141FBA31BD00BAD314 /* Main.storyboard in Resources */,
 				D253785D207BFED800B5571A /* myBaseData.plist in Resources */,
@@ -788,14 +788,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7C138C7FD3CEF4BCB614EA8D /* Pods-AirshowAppOs.debug.xcconfig */;
 			buildSettings = {
+				ALTERNATE_MODE = "u+w,go-w,a+rX";
+				"ALTERNATE_PERMISSIONS_FILES[sdk=*]" = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AirshowAppOs/AirshowAppOs.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZNZ9BV342D;
 				INFOPLIST_FILE = AirshowAppOs/Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = AirshowAppOs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.AirshowAppOs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -805,6 +810,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 92951F21D4C6EFA5D752EA94 /* Pods-AirshowAppOs.release.xcconfig */;
 			buildSettings = {
+				ALTERNATE_MODE = "u+w,go-w,a+rX";
+				"ALTERNATE_PERMISSIONS_FILES[sdk=*]" = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AirshowAppOs/AirshowAppOs.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZNZ9BV342D;

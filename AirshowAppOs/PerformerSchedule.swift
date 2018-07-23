@@ -128,15 +128,17 @@ class PerformerSchedule: UIViewController, UITableViewDelegate, UITableViewDataS
         return cell
     }
     func getIndexOfSelectedAirshow() -> Int{
-        var index: Int = 0
-        for airshow in InfoStore.getDatabase().airshows {
-            if (airshow?.name == basePassed){
-                return index
-            } else {
-                index += 1
-            }
-        }
-        return 200
+        return 0
+        /*var index: Int = 0
+         for airshow in InfoStore.getDatabase().airshows {
+         if (airshow?.name == basePassed){
+         return index
+         } else {
+         index += 1
+         }
+         }
+         return 200
+         */
     }
     
 }

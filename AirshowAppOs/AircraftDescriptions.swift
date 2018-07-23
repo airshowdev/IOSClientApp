@@ -15,6 +15,7 @@ class AircraftDescriptions: UIViewController{
     var receivingPage:String!
     
     var basePassed: String = PListConnection.loadMyBase()
+    
     var selectedAirshowIndex: Int = 0
     var images = AirshowImages.SavedImageCache
     private var myAircraftImageView: UIImageView!
@@ -24,7 +25,6 @@ class AircraftDescriptions: UIViewController{
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        
         let barHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height
         let navHeight: CGFloat = self.view.frame.height * 0.10
         let navBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: barHeight, width: self.view.frame.width, height: navHeight))
@@ -39,7 +39,7 @@ class AircraftDescriptions: UIViewController{
         self.view.backgroundColor = .gray
         
          selectedAirshowIndex = getIndexOfSelectedAirshow()
-        scheduledPerformers = (InfoStore.getDatabase().airshows[selectedAirshowIndex]?.InAirPerformers())!
+        scheduledPerformers = (InfoStore.getDatabase().airshows[0]?.InAirPerformers())!
          let displayHeight: CGFloat = (barHeight + navHeight)
         
         //adds the image and image view to the view controller
@@ -86,15 +86,17 @@ class AircraftDescriptions: UIViewController{
         }
     }
     func getIndexOfSelectedAirshow() -> Int{
-        var index: Int = 0
-        for airshow in InfoStore.getDatabase().airshows {
-            if (airshow?.name == basePassed){
-                return index
-            } else {
-                index += 1
-            }
-        }
-        return 200
+        return 0
+        /*var index: Int = 0
+         for airshow in InfoStore.getDatabase().airshows {
+         if (airshow?.name == basePassed){
+         return index
+         } else {
+         index += 1
+         }
+         }
+         return 200
+         */
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

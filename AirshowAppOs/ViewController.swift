@@ -24,7 +24,7 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     // Variables for the picker view
     @IBOutlet weak var pickerBases: UIPickerView!
     var pickerBasesData: [String] = [String]()
-    var valueSelected: String?
+    var valueSelected: String = ""
 
     
     override func viewDidLoad() {
@@ -39,7 +39,8 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         pickerBases.delegate = self
         pickerBases.dataSource = self
         pickerBases.backgroundColor = .gray
-        
+        pickerBases.selectRow(1, inComponent: 0, animated: false)
+        buttonClick(btnSplashPage) 
     }
     
     var airshowData:Databases?
@@ -50,7 +51,6 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         let task = URLSession.shared.dataTask(with: airshowUrl!)
         {
             (data, response, error) in let data2 = data
-            
             do{
                 let decoder = JSONDecoder()
                 self.airshowData = try decoder.decode(Databases.self, from: data2!)
@@ -64,42 +64,43 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         InfoStore.setDatabase(databaseIn: airshowData!)
     }
     @IBAction func buttonClick(_ sender: Any?) {
-        if pickerBases.selectedRow(inComponent: 0) == 0{
-        }
-        else{
+        //if pickerBases.selectedRow(inComponent: 0) == 0{
+        //}
+        //else{
             let selected = pickerBases.selectedRow(inComponent: 0)
-            PListConnection.saveMyBase(value: InfoStore.getDatabase().airshows[selected - 1]!.name)
+            //PListConnection.saveMyBase(value: InfoStore.getDatabase().airshows[selected - 1]!.name)
             self.performSegue(withIdentifier: "ToAirshowTable", sender: self)
-        }
+        //}
     }
-    override func viewDidAppear(_ animated: Bool)
+   /* override func viewDidAppear(_ animated: Bool)
     {
         if (InfoStore.getDatabase().AirshowNames().contains(PListConnection.loadMyBase())){
             
             self.performSegue(withIdentifier: "ToAirshowTable", sender: self)
         }
-    }
+    }*/
     override func viewWillAppear(_ animated: Bool)
     {
         Connect()
         pickerBasesData = (airshowData?.AirshowNames())!
         pickerBasesData.insert("Choose An Airshow", at: 0)
+        valueSelected = pickerBasesData[1]
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if segue.destination is AirshowTable
         {
             //if a base is not already selected the chosen base will be saved to the plist file
-            if myBaseValue == "Hello"
-            {
+            //if PListConnection.loadMyBase() == "Hello"
+            //{
                 //saves the base to the plist
                 //saveData(value: "Hello")
                 // [START subscribe_topic]
-                Messaging.messaging().subscribe(toTopic: valueSelected!)
-                print("Subscribed to \(valueSelected!) topic")
+            
+                Messaging.messaging().subscribe(toTopic: valueSelected)
                 // [END subscribe_topic]
-                PListConnection.saveMyBase(value: valueSelected!)
-            }
+                //PListConnection.saveMyBase(value: valueSelected!)
+            //}
         }
     }
     //The number of columns

@@ -40,7 +40,7 @@ class   AirshowTable: UIViewController, UITableViewDelegate, UITableViewDataSour
                 selectedPerformer += 1
 
         }
-        selectedAirshowIndex = getIndexOfSelectedAirshow()
+        selectedAirshowIndex =  0
         //Inserts the name of the base into the array
         myArray.insert("About " + (InfoStore.database?.airshows[selectedAirshowIndex]?.base)!, at: 7)
     
@@ -61,8 +61,6 @@ class   AirshowTable: UIViewController, UITableViewDelegate, UITableViewDataSour
         myTableView.delegate = self
         myTableView.backgroundColor = .gray
         self.view.addSubview(myTableView)
-
-        
         Countdown()
         
     }
@@ -211,15 +209,17 @@ class   AirshowTable: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
     func getIndexOfSelectedAirshow() -> Int{
-        var index: Int = 0
-        for airshow in InfoStore.getDatabase().airshows {
-            if (airshow?.name == basePassed){
-                return index
-            } else {
-                index += 1
-            }
-        }
-    return 0
+        return 0
+        /*var index: Int = 0
+         for airshow in InfoStore.getDatabase().airshows {
+         if (airshow?.name == basePassed){
+         return index
+         } else {
+         index += 1
+         }
+         }
+         return 200
+         */
     }
 }
 
